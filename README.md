@@ -37,16 +37,20 @@ unit-commitment-project/
 ├── LICENSE                   # License information
 │
 ├── scripts/
-│   ├── main_unit_commitment.py   # Solver for the large problem
-│   ├── simple_example.py         # Solver for the small illustrative example
-│
+│   ├── simple_case/
+│   │   ├── unitcommitment_simplecase.py
+│   │   └── README.md
+│   ├── main_case/
+│   │   ├── main_unit_commitment.py
+│   │   └── README.md
+│ 
 ├── inputs/
-│   ├── big_problem_input.xlsx    # Input for the large case study (illustrative screenshot)
-│   ├── simple_input.xlsx         # Input for the small example
+│   ├── unitC_LARGE_STATEMENT.png    # Input for the large case study (illustrative screenshot)
+│   ├── simple_demo.xlsx         # Input for the small demo code example
 │
 ├── outputs/
-│   ├── big_problem_output.xlsx   # Output for the large case study
-│   ├── simple_output.xlsx        # Output for the small example
+│   ├── UnitCOMMITMENT_MAIN_RESULTS.xlsx   # Output for the large case study
+│   ├── simple_case_output.xlsx        # Output for the small example
 ```
 ---
 
@@ -76,12 +80,19 @@ python scripts/main_unit_commitment.py
 
 ## 📚 Dependencies
 
-The project requires the following Python packages:
+The project requires the following Python packages and tools:
 
-- **Python ≥ 3.8**
-- **pandas**
-- **numpy**
-- **gurobipy**
+- **Python ≥ 3.8** – Recommended for compatibility with all dependencies.  
+- **pandas** – For reading, writing, and manipulating Excel and tabular data.  
+- **numpy** – For numerical operations and array handling.  
+- **pyomo** – To formulate and solve optimization models.  
+- **gurobipy** – Python interface to Gurobi solver for mixed-integer programming.  
+- **xlsxwriter** – For exporting results to formatted Excel files.  
+- **openpyxl** – For reading and writing Excel `.xlsx` files.  
+- **GLPK** – Open-source solver for linear and mixed-integer programming (alternative to Gurobi).  
+
+Optional but recommended:   
+- **time** (standard library) – For measuring execution time.  
 
 > ⚠️ Ensure that you have a valid Gurobi license installed before running the scripts.
 
