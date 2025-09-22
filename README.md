@@ -6,11 +6,14 @@ This project implements the **Unit Commitment (UC) problem** in power systems, f
 The goal is to determine which power generation units should be **ON** or **OFF** in each time period to:  
 - Meet electricity demand,  
 - Minimize total operating costs,  
-- Respect key technical and economic unit constraints.  
+- Respect key technical and economic unit constraints.
 
-The project includes:  
-- **A small illustrative example** with full Excel input/output files.  
-- **A larger case study**, where input data are currently provided in **illustrative form (screenshot)**.
+The project includes:
+- A small illustrative example with full Excel input/output files.
+- A larger case study, where input data are currently provided in illustrative form (screenshot).
+
+> ℹ️ The input data structure is inspired by U.S. electricity market practices (ISO-style), but all values are artificially generated.
+
 
 ---
 
