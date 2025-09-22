@@ -66,8 +66,7 @@ These calculations are included in the output Excel file (`simple_output.xlsx`) 
 2. Update the input file path in `simple_example.py` if necessary.  
 
 3. Run the script:
-   ```bash
-   python simple_example.py
-4. Results will be saved in the outputs folder as an Excel file
-   ```bash
-   simple_output.xlsx
+```bash
+python simple_example.py
+```
+ 4. Results will be saved in the outputs folder as simple_output.xlsx
