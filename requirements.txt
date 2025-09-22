@@ -1,0 +1,19 @@
+# Python version
+python>=3.8
+
+# Data handling
+pandas
+numpy
+
+# Optimization modeling
+pyomo
+
+# Excel output
+xlsxwriter
+openpyxl
+
+# Solvers
+# GLPK is used for the simple case
+# Gurobi is used for the main case
+# Gurobi requires a valid license and installation
+gurobipy
