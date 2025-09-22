@@ -2,7 +2,7 @@
 
 ## Input Data
 
-The simple illustrative case uses demo data provided in the Excel file `UnitCdemo.xlsx`.  
+The simple illustrative case uses demo data provided in the Excel file `simple_demo.xlsx`.  
 
 - The input values are **artificially generated** and **do not represent real-world market data**.  
 - The file contains essential parameters such as:
@@ -44,7 +44,7 @@ In the simple case, **shadow prices (locational marginal prices, LMPs)** are use
   - **Ex-post consumer utility per period**  
   - **Total social welfare**  
 
-These calculations are included in the output Excel file (`simple_output.xlsx`) under the “Ex-post Summary” sheet.
+These calculations are included in the output Excel file (`simple_case_output.xlsx`) under the “Ex-post Summary” sheet.
 
 ### Why This Approach
 
@@ -63,10 +63,10 @@ These calculations are included in the output Excel file (`simple_output.xlsx`) 
    - xlsxwriter  
    - GLPK solver  
 
-2. Update the input file path in `simple_example.py` if necessary.  
+2. Update the input file path in `unitcommitment_simplecase.py` if necessary.  
 
 3. Run the script:
 ```bash
-python simple_example.py
+python unitcommitment_simplecase.py
 ```
  4. Results will be saved in the outputs folder as simple_output.xlsx
